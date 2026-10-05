@@ -22,13 +22,13 @@ describe('ProtectedRoute', () => {
               path="/private"
               element={<ProtectedRoute><p>Nội dung riêng tư</p></ProtectedRoute>}
             />
-            <Route path="/unauthorized" element={<p>Không được phép</p>} />
+            <Route path="/login" element={<p>Trang đăng nhập</p>} />
           </Routes>
         </MemoryRouter>
       </AuthProvider>,
     );
 
-    expect(screen.getByText('Không được phép')).toBeInTheDocument();
+    expect(screen.getByText('Trang đăng nhập')).toBeInTheDocument();
     expect(screen.queryByText('Nội dung riêng tư')).not.toBeInTheDocument();
   });
 

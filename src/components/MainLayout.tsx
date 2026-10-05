@@ -11,18 +11,16 @@ import { useAuth } from '../contexts/AuthContext';
 export const MainLayout: React.FC = () => {
   // Trạng thái đóng/mở sidebar
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+  const location = useLocation();
   // Trạng thái hiển thị thông báo Toast đăng nhập thành công
-  const [showToast, setShowToast] = useState(false);
+  const [showToast, setShowToast] = useState(() => !!location.state?.loginSuccess);
   
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
-  const location = useLocation();
 
   // Hiển thị Toast dựa vào state được pass qua navigate từ LoginPage
   useEffect(() => {
-    if (location.state?.loginSuccess) {
-      setShowToast(true);
-      
+    if (showToast) {
       // Xóa state khỏi history để tránh toast hiện lại khi F5 trang
       window.history.replaceState({}, document.title);
       
@@ -33,7 +31,7 @@ export const MainLayout: React.FC = () => {
       
       return () => clearTimeout(timer);
     }
-  }, [location]);
+  }, [showToast]);
 
   // Hàm xử lý đăng xuất giả lập
   const handleLogout = (): void => {

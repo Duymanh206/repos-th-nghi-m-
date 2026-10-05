@@ -120,7 +120,7 @@ export const LoginPage: React.FC = () => {
         // Thất bại: Ném lỗi để block catch xử lý
         throw new Error('INVALID_CREDENTIALS');
       }
-    } catch (err: unknown) {
+    } catch (_err: unknown) {
       const newAttempts = failedAttempts + 1;
       setFailedAttempts(newAttempts);
       localStorage.setItem('login_failed_attempts', newAttempts.toString());

@@ -16,10 +16,14 @@ import { UserManagementPage } from './pages/admin/UserManagementPage';
 import { RecruitmentPage } from './pages/recruitment/RecruitmentPage';
 import { SalaryReportPage } from './pages/reports/SalaryReportPage';
 import { SystemSettingsPage } from './pages/settings/SystemSettingsPage';
+import { HealthCheckWidget } from './components/HealthCheckWidget';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      {/* Nút HealthCheck nổi ở mọi màn hình để kiểm thử kết nối Backend */}
+      <HealthCheckWidget />
+      
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
