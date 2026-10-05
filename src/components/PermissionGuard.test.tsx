@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import { type AuthUser } from '../context/AuthContext';
-import { AuthProvider } from '../context/AuthProvider';
+import { type AuthUser } from '../contexts/AuthContext';
+import { AuthProvider } from '../contexts/AuthProvider';
 import { usePermission } from '../hooks/usePermission';
 import { PermissionGuard, type PermissionGuardProps } from './PermissionGuard';
 

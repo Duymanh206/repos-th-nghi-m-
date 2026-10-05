@@ -2,8 +2,8 @@ import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { AccountRoleModal } from './AccountRoleModal';
 import { accountService } from '../../services/accountService';
-import { AuthProvider } from '../../context/AuthProvider';
-import type { AuthUser } from '../../context/AuthContext';
+import { AuthProvider } from '../../contexts/AuthProvider';
+import type { AuthUser } from '../../contexts/AuthContext';
 import type { Account } from '../../types/account';
 
 const MOCK_ACCOUNT: Account = {

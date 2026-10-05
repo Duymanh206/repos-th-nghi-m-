@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import { AuthProvider } from '../../context/AuthProvider';
-import type { AuthUser } from '../../context/AuthContext';
+import { AuthProvider } from '../../contexts/AuthProvider';
+import type { AuthUser } from '../../contexts/AuthContext';
 import { ProtectedRoute } from './ProtectedRoute';
 
 const authenticatedUser: AuthUser = {

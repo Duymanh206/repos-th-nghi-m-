@@ -3,7 +3,7 @@ import { X, Shield, CheckCircle2, RefreshCw, AlertCircle, AlertTriangle } from '
 import type { Account, AccountRole } from '../../types/account';
 import { AVAILABLE_ROLES } from '../../types/account';
 import { accountService } from '../../services/accountService';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../contexts/AuthContext';
 
 // Định nghĩa giao diện thuộc tính (Props) cho modal phân quyền vai trò
 export interface AccountRoleModalProps {

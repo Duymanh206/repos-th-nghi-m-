@@ -3,7 +3,7 @@ import { X, Lock, Unlock, AlertTriangle, RefreshCw, CheckCircle2 } from 'lucide-
 import type { Account, AccountStatus } from '../../types/account';
 import { accountService } from '../../services/accountService';
 import { AccountStatusBadge } from './AccountStatusBadge';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../contexts/AuthContext';
 
 // Định nghĩa giao diện thuộc tính (Props) cho modal xác nhận thay đổi trạng thái tài khoản
 export interface AccountStatusConfirmModalProps {

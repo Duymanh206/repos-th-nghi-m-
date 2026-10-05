@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, LogOut, Bell, CheckCircle } from 'lucide-react';
 import { SidebarMenu } from './SidebarMenu';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 /**
  * MainLayout bọc xung quanh các trang nội bộ sau khi đăng nhập.

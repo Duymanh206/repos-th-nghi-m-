@@ -4,7 +4,7 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 import { PermissionGuard } from '../../components/PermissionGuard';
 import { ProtectedRoute } from '../../components/routes/ProtectedRoute';
-import { AuthProvider } from '../../context/AuthProvider';
+import { AuthProvider } from '../../contexts/AuthProvider';
 import { LoginPage } from './LoginPage';
 
 describe('LoginPage và AuthContext', () => {

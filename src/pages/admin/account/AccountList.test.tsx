@@ -3,8 +3,8 @@ import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { AccountList } from './AccountList';
 import { accountService } from '../../../services/accountService';
-import { AuthProvider } from '../../../context/AuthProvider';
-import type { AuthUser } from '../../../context/AuthContext';
+import { AuthProvider } from '../../../contexts/AuthProvider';
+import type { AuthUser } from '../../../contexts/AuthContext';
 import type { AccountListResponse } from '../../../types/account';
 
 // Dữ liệu người dùng quản trị viên giả lập để phục vụ kiểm thử quyền

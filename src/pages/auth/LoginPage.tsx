@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff, ShieldCheck, AlertCircle, Clock, Loader2 } from 'lucide-react';
-import { useAuth, type AuthUser } from '../../context/AuthContext';
+import { useAuth, type AuthUser } from '../../contexts/AuthContext';
 // import { authService } from '../../services/authService'; // Đã giữ comment bằng tiếng Việt, sẽ bỏ khi nối API thật
 
 type LoginState = 'normal' | 'error' | 'lockout' | 'loading' | 'success';

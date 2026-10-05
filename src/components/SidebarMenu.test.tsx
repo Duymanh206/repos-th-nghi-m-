@@ -3,10 +3,10 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { BrowserRouter } from 'react-router-dom';
 import { SidebarMenu } from './SidebarMenu';
-import * as AuthContextModule from '../context/AuthContext';
+import * as AuthContextModule from '../contexts/AuthContext';
 
 // Mock hook useAuth để giả lập các ngữ cảnh quyền khác nhau
-vi.mock('../context/AuthContext', () => ({
+vi.mock('../contexts/AuthContext', () => ({
   useAuth: vi.fn(),
 }));
 
