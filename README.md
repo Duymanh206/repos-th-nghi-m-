@@ -1,17 +1,42 @@
-# Hệ Thống Tuyển Dụng Nội Bộ
+# Hệ Thống Tuyển Dụng Nội Bộ - Frontend
 
-Hệ thống quản lý tuyển dụng nội bộ của doanh nghiệp.
+Đây là thư mục chứa mã nguồn Frontend của dự án **Hệ Thống Tuyển Dụng Nội Bộ**.
 
-## Tech Stack
+## Công nghệ sử dụng
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- React Router DOM
+- Axios
+- Lucide React (Icons)
 
-- Frontend: React + TypeScript
-- Backend: Spring Boot + Java
-- Database: PostgreSQL
+## Hướng dẫn cài đặt
+1. Cài đặt các thư viện:
+   ```bash
+   npm install
+   ```
 
-## Project Structure
+2. Khởi động môi trường phát triển (Dev Server):
+   ```bash
+   npm run dev
+   ```
 
-- `frontend/`: Frontend application
-- `backend/`: Backend application
-- `database/`: Database scripts
-- `docs/`: Project documentation
-- `devops/`: Deployment and infrastructure configuration
+3. Build dự án:
+   ```bash
+   npm run build
+   ```
+
+## Cấu trúc thư mục
+- `src/types/`: Chứa định nghĩa các Interface, Type của TypeScript.
+- `src/services/`: Chứa các hàm giao tiếp với API (Axios).
+- `src/context/`: Quản lý Global State.
+- `src/components/layout/`: Các thành phần bố cục (Header, Sidebar).
+- `src/components/routes/`: Quản lý các Route (ProtectedRoute).
+- `src/pages/`: Chứa các trang chính của ứng dụng (Auth, Dashboard).
+
+## Quy ước Code (Coding Convention)
+- Sử dụng tiếng Việt 100% trong các comment và tài liệu.
+- Xử lý lỗi chặt chẽ bằng `try...catch...finally` để không bao giờ nuốt lỗi hoặc kẹt Loading state.
+- Đặt tên biến theo chuẩn `camelCase`, Component/Interface theo chuẩn `PascalCase`.
+- Tách biệt logic API ra khỏi giao diện.
