@@ -47,3 +47,4 @@ Mock tests không chứng minh kết nối runtime hoặc CORS trong browser. C�
 Branch cá nhân → PR → Branch `feature/TKNHTTDNB1-584-integrate-api` được tạo từ `develop`. Branch cá nhân `feature/bugfix/refactor/chore` → PR + review ít nhất một thành viên + CI/test → `develop`. `Develop` ổn định → PR + review → `main`. 
 
 Không push trực tiếp `main`/`develop`. Conflict xử lý trên branch cá nhân, test/build lại trước merge.
+

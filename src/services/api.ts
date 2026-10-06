@@ -42,3 +42,4 @@ export const getJson = async (endpoint: string): Promise<unknown> => {
     throw error;
   }
 };
+

@@ -17,3 +17,4 @@ export const checkHealth = async (): Promise<boolean> => {
     return false;
   }
 };
+
